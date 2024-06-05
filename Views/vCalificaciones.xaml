@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="IriveraTallerS2.Views.vCalificaciones"
+             Title="vCalificaciones">
+    <ScrollView>
+    <VerticalStackLayout
+        Spacing="25"
+        Padding="20">
+
+        <Label 
+            Text="SISTEMA DE CALIFICACIONES"
+            FontSize="24"
+            HorizontalTextAlignment="Center"
+            TextColor="SlateGrey"/>
+        <Label Text="Parcial 1"
+               FontSize="20"
+               TextColor="Red"/>
+        <Picker x:Name="pkEstudiantes" Title="Estudiantes">
+                <Picker.Items>
+                    <x:String>ISAAC</x:String>
+                    <x:String>GUSTAVO</x:String>
+                    <x:String>JAIME</x:String>
+                    <x:String>MICHAEL</x:String>
+                    <x:String>SAMANTA</x:String>
+
+                </Picker.Items>
+        </Picker>
+            <Entry x:Name=" txtSeguimiento1"
+               Placeholder="Ingrese Nota de seguimiento"
+               Keyboard="Numeric"
+               MaxLength="2"/>
+
+        <Entry x:Name=" txtExamen1"
+       Placeholder="Ingrese Nota de Examen"
+       Keyboard="Numeric"
+       MaxLength="2"/>
+           
+
+
+            <Label Text="Parcial 2"
+        FontSize="20"
+        TextColor="Red"/>
+          
+            <Entry x:Name=" txtSeguimiento2"
+        Placeholder="Ingrese Nota de seguimiento"
+        Keyboard="Numeric"
+        MaxLength="2"/>
+
+            <Entry x:Name=" txtExamen2"
+            Placeholder="Ingrese Nota de Examen"
+                Keyboard="Numeric"
+                MaxLength="2"/>
+          
+
+
+
+            <DatePicker x:Name="dpFecha" Format="MM/DD/YYY">
+
+
+        </DatePicker>
+
+        <Button x:Name="btnCalcularNotaFinal"
+                Text="Calcular Nota Final"
+                Clicked="btnCalcularNotaFinal_Clicked"/>
+
+    </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

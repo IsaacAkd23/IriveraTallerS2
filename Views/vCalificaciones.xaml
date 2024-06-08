@@ -35,7 +35,11 @@
        Placeholder="Ingrese Nota de Examen"
        Keyboard="Numeric"
        MaxLength="2"/>
-           
+
+            <Entry x:Name=" txtNota1"
+                Placeholder="NOTA PARCIAL 1"
+                IsEnabled="False"
+                   MaxLength="2"/>
 
 
             <Label Text="Parcial 2"
@@ -51,7 +55,12 @@
             Placeholder="Ingrese Nota de Examen"
                 Keyboard="Numeric"
                 MaxLength="2"/>
-          
+        
+            <Entry x:Name=" txtNota2"
+                 Placeholder="NOTA PARCIAL 2"
+                 IsEnabled="False"
+                   MaxLength="2"/>
+
 
 
 
@@ -60,7 +69,11 @@
 
         </DatePicker>
 
-        <Button x:Name="btnCalcularNotaFinal"
+            <Entry x:Name=" txtNotaFinal"
+                Placeholder="NOTA FINAL"
+                 IsEnabled="False"/>
+
+            <Button x:Name="btnCalcularNotaFinal"
                 Text="Calcular Nota Final"
                 Clicked="btnCalcularNotaFinal_Clicked"/>
 
